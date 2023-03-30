@@ -76,6 +76,15 @@ public class User {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        else if(obj.getClass() != this.getClass()) return false;
+        final User user = (User) obj;
+        if(!user.getId().equals(id)) return false;
+        return true;
+    }
+
+    @Override
     public String toString() {
         return firstName + " " + lastName;
     }

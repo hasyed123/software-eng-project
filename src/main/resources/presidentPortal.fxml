@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.presentation.view.PresidentPortalController">
+    <children>
+        <Pane prefHeight="700.0" prefWidth="1200.0">
+            <children>
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#404243" height="69.0" layoutX="6.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="1181.0" />
+                <Text fill="WHITE" layoutX="33.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="President Portal" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1dcdc" height="191.0" layoutX="33.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+                <Text layoutX="33.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Events" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text layoutX="51.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event name" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text layoutX="51.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="51.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="51.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="200.70963287353516">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Button layoutX="51.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Cancel" />
+            <Text layoutX="33.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member list" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1dcdc" height="291.0" layoutX="33.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+            <Text layoutX="55.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Names" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1dcdc" height="191.0" layoutX="327.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+            <Text layoutX="345.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event name" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="345.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="345.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="345.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="345.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Cancel" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1dcdc" height="191.0" layoutX="613.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+            <Text layoutX="631.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event name" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="631.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="631.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="631.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="631.0" layoutY="277.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Cancel" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1dcdc" height="191.0" layoutX="911.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+            <Text layoutX="929.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event name" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="929.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="929.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="929.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="200.70963287353516">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="929.0" layoutY="277.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Cancel" />
+            <Button layoutX="1043.0" layoutY="95.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Add" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

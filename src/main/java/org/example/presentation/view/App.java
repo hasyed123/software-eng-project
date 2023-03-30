@@ -14,7 +14,7 @@ import java.util.Objects;
 
 public class App extends Application {
     public static Injector injector = Guice.createInjector(new HibernateModule());
-    CemsService service = new CemsService(injector);
+    public static CemsService service = new CemsService(injector);
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("LoginWindow.fxml")));

@@ -8,6 +8,8 @@ import org.example.model.Club;
 import org.example.model.Event;
 import org.example.model.User;
 
+import java.util.List;
+
 public class CemsService {
 
     private final Injector injector;
@@ -40,14 +42,29 @@ public class CemsService {
         return true;
     }
 
+    // Registers user for event if user is in the club organizing the event
     public Boolean addMemberToEvent(Integer eventId, String username) {
         User user = userDao.getUserById(username);
         Event event = eventDao.getEventById(eventId);
         if(user==null || event==null) return false;
-        if(event.getAttendees().contains(user)) return false;
+        Club club = event.getClub();
+        if(event.getAttendees().contains(user) || !club.getMembers().contains(user)) return false;
         event.addAttendee(user);
         eventDao.addOrUpdateEvent(event);
         return true;
+    }
+
+    // method that checks if a user is a president of a club, and if they are returns the club, otherwise returns null
+    public Club getClubIfPresident(String username) {
+        User user = userDao.getUserById(username);
+        if(user==null) return null;
+        List<Club> clubs = clubDao.getAllClubs();
+        for (Club club : clubs) {
+            if (club.getPresident().equals(user)) {
+                return club;
+            }
+        }
+        return null;
     }
 
     public User getUser(String username) {
